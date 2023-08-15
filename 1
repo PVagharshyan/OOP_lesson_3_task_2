@@ -1,0 +1,28 @@
+class game_board:
+    _max: int = 100
+    _min: int = 3
+
+    def __init__(self, size: int) -> None:
+        self.size = width_val
+        self.height = height_val
+
+    @property
+    def width(self) -> int:
+        return self._width
+
+    @width.setter
+    def width(self, width_val: int) -> None:
+        if self._min <= width_val <= self._max:
+            self._width = width_val
+
+    @property
+    def height(self) -> int:
+        return self._height
+
+    @width.setter
+    def width(self, height_val: int) -> None:
+        if self._min <= height_val <= self._max:
+            self._height = height_val
+
+
+
